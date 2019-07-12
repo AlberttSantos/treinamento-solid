@@ -34,7 +34,7 @@ namespace BomOCP
         public abstract void Receber(decimal valor);
     }
 
-    class ReceberCartaoCredito : FormaPagamento
+    class FormaPagamentoCartaoCredito : FormaPagamento
     {
         public override void Receber(decimal valor)
         {
@@ -42,7 +42,7 @@ namespace BomOCP
         }
     }
 
-    class ReceberDinheiro : FormaPagamento
+    class FormaPagamentoDinheiro : FormaPagamento
     {
         public override void Receber(decimal valor)
         {

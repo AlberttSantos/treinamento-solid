@@ -45,7 +45,7 @@ namespace BomISP
         void Testar();
     }
 
-    class Desenvolvedores : IProgramadoresTODOS
+    class Desenvolvedores : IDesenvolvedoresTODOS
     {
         public void Programar()
         {

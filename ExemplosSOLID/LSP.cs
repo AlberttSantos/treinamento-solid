@@ -89,4 +89,36 @@ namespace BomLSP
 
 }
 
+namespace QuadradoRetangulo
+{
+    class Retangulo
+    {
+        public int Altura { get; set; }
+        public int Largura { get; set; }
 
+        public virtual void AtribuirLargura(int largura)
+        {
+            this.Largura = largura;
+        }
+
+        public virtual void AtribuirAltura(int altura)
+        {
+            this.Altura = altura;
+        }
+    }
+
+    class Quadrado : Retangulo
+    {
+        public override void AtribuirAltura(int altura)
+        {
+            this.Altura = altura;
+            this.Largura = altura;
+        }
+
+        public override void AtribuirLargura(int largura)
+        {
+            this.Altura = largura;
+            this.Largura = largura;
+        }
+    }
+}
